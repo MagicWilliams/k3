@@ -17,10 +17,10 @@ class Home extends React.Component {
                     <div className="left-col">
                         <h1 id="name"> david latimore ii </h1>
                         <div id="link-section"> 
-                            <a href="https://www.github.com/MagicWilliams">code</a>
-                            <a href="https://www.twitter.com/MagicWilliams">tweets</a>
-                            <a href="">resume</a>
-                            <a href="https://www.dialupstuff.com">dialupstuff</a>
+                            <a target="_blank" href="https://www.github.com/MagicWilliams">code</a>
+                            <a target="_blank" href="https://www.twitter.com/MagicWilliams">tweets</a>
+                            <a target="_blank" href="">resume</a>
+                            <a target="_blank" href="http://dialupstuff.com">dialupstuff</a>
                         </div>
                     </div>
                     <div className="right-col">
