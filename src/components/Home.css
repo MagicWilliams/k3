@@ -1,0 +1,25 @@
+.Home {
+	display: grid;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
+	grid-template-columns: 5fr 7fr;
+  	grid-column-gap: 10px;
+  	overflow-y: hidden;
+}
+
+.left-col {
+	padding-top: 60%;
+}
+
+.left-col, .right-col {
+
+}
+
+#project-view {
+	height: 40%;
+	margin: 30% auto;
+	width: 80%;
+
+	background-color: black;
+}
