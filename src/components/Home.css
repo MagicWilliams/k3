@@ -1,11 +1,30 @@
-.Home {
+* {
+	font-family: "Avenir Next";
+}
+
+.Home-body {
 	display: grid;
-	height: 100vh;
-	justify-content: center;
+	height: 86vh;
 	text-align: center;
 	grid-template-columns: 5fr 7fr;
-  	grid-column-gap: 10px;
+  	grid-column-gap: 20px;
   	overflow-y: hidden;
+  	color: #474747;
+}
+
+.Home-footer {
+	display: grid;
+	height: 14vh;
+	text-align: center;
+	grid-template-columns: 1fr;
+  	grid-column-gap: 20px;
+  	overflow-y: hidden;
+  	color: #474747;
+}
+
+.Home-footer h4 {
+	text-align: left;
+	padding-left: 60px;
 }
 
 .left-col {
@@ -20,6 +39,42 @@
 	height: 40%;
 	margin: 30% auto;
 	width: 80%;
-
 	background-color: black;
+}
+
+.project-section ul {
+	list-style: none;
+}
+
+.project-section li {
+	float: left;
+	display: inline;
+	margin: 0 20px;
+	position: relative;
+	top: -35px;
+	left: 5px;
+
+	font-weight: bold;
+	font-style: italic;
+	color: #707070;
+}
+
+#name {
+	font-size: 2.25em;
+	font-weight: bolder;
+}
+
+a {
+	font-size: 1.1em;
+	margin: 10px;
+}
+
+a, a:visited, a:active {
+	text-decoration: none;
+	color: #474747;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: underline;
 }
