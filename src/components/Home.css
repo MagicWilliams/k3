@@ -2,67 +2,71 @@
 	font-family: "Avenir Next";
 }
 
-.Home-body {
+.grid {
 	display: grid;
-	height: 86vh;
+  	height: 100vh;
 	text-align: center;
-	grid-template-columns: 5fr 7fr;
+	grid-template-columns: minmax(200px, 2fr) minmax(300px, 3fr);
+	grid-template-rows: 1fr 100px;
   	grid-column-gap: 20px;
-  	overflow-y: hidden;
   	color: #474747;
 }
 
-.Home-footer {
-	display: grid;
-	height: 14vh;
-	text-align: center;
-	grid-template-columns: 1fr;
-  	grid-column-gap: 20px;
-  	overflow-y: hidden;
-  	color: #474747;
+.item {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
 }
 
-.Home-footer h4 {
+.item2{
+  grid-row: 1;
+  grid-column: 2;
+  position: relative;
+
+}
+
+.item3{
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+    
+}
+
+.item1-content {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.item3 h4 {
 	text-align: left;
 	padding-left: 60px;
 }
-
-.left-col {
-	padding-top: 60%;
-}
-
-.left-col, .right-col {
-
+	
+.item2-content {
+	position: absolute;
+	top: 55%; left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 #project-view {
-	height: 40%;
-	margin: 30% auto;
-	width: 80%;
 	background-color: black;
+	height: 250px;
+	width: 400px;
+	min-width: 400px;
 }
 
-.project-section ul {
-	list-style: none;
+#project-caption {
+	
 }
 
-.project-section li {
-	float: left;
-	display: inline;
-	margin: 0 20px;
-	position: relative;
-	top: -35px;
-	left: 5px;
 
-	font-weight: bold;
-	font-style: italic;
-	color: #707070;
-}
 
 #name {
 	font-size: 2.25em;
 	font-weight: bolder;
 }
+
 
 a {
 	font-size: 1.1em;
@@ -77,4 +81,29 @@ a, a:visited, a:active {
 a:hover {
 	color: #000;
 	text-decoration: underline;
+}
+
+
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    height: auto;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 15s linear infinite;
+}
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
 }
