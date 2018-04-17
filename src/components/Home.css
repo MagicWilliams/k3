@@ -6,7 +6,7 @@
 	display: grid;
   	height: 100vh;
 	text-align: center;
-	grid-template-columns: minmax(200px, 2fr) minmax(300px, 3fr);
+	grid-template-columns: minmax(400px, 2fr) minmax(400px, 3fr);
 	grid-template-rows: 1fr 100px;
   	grid-column-gap: 20px;
   	color: #474747;
