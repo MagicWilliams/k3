@@ -1,11 +1,23 @@
 import React from 'react';
 import styles from './Home.css';
+import ProjectLinksComp from './ProjectLink/ProjectLink';
 
 class Home extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {
-            
+            desc: [
+                "a UI i designed for SocialWorks Chicago", 
+                "an EP i made with @dialupstuff. Available on Apple Music and Spotify.",
+                "a site for rogue agency, a music label in new york"
+            ],
+
+            mediaLinks: [
+                "    ", 
+                "    ",
+                "    "
+            ],
+
         }
     }
 
@@ -33,10 +45,12 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div className="item3">
-                        <h4> stuff i've made recently </h4>
-                        <div className="project-section">
-                            <p className = "marquee"><span> a design spec for social works chicago              an album, available at dialupstuff.com           a site for Psuedo Knitting Club               a PSN account, play fortnite w me             </span></p>
-                        </div> 
+                        <h4> projects i can show off publicly </h4>
+                        <div>
+                            {this.state.desc.map((desc, index) =>
+                                 <p className="project-text"> {desc} </p>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>

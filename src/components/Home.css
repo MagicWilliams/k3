@@ -6,8 +6,8 @@
 	display: grid;
   	height: 100vh;
 	text-align: center;
-	grid-template-columns: minmax(400px, 2fr) minmax(400px, 3fr);
-	grid-template-rows: 1fr 100px;
+	grid-template-columns: minmax(400px, 2fr) minmax(400px, 2fr);
+	grid-template-rows: 1fr 170px;
   	grid-column-gap: 20px;
   	color: #474747;
 }
@@ -29,23 +29,31 @@
   grid-row: 2;
   grid-column-start: 1;
   grid-column-end: 3;
-    
+  position: relative;
+}
+
+.item3 div {
+  display: flex;
 }
 
 .item1-content {
 	position: absolute;
-	top: 50%; left: 50%;
+	top: 60%; left: 50%;
 	transform: translate(-50%,-50%);
 }
 
 .item3 h4 {
-	text-align: left;
-	padding-left: 60px;
+	font-family: "Helvetica Neue";
+	font-weight: bolder;
+	position: relative;
+	top: 15%;
+	color: #999;
+
 }
 	
 .item2-content {
 	position: absolute;
-	top: 55%; left: 50%;
+	top: 65%; left: 50%;
 	transform: translate(-50%,-50%);
 }
 
@@ -55,12 +63,6 @@
 	width: 400px;
 	min-width: 400px;
 }
-
-#project-caption {
-	
-}
-
-
 
 #name {
 	font-size: 2.25em;
@@ -76,11 +78,14 @@ a {
 a, a:visited, a:active {
 	text-decoration: none;
 	color: #474747;
+	padding: 15px;
+	border: 1px solid transparent;
 }
 
 a:hover {
-	color: #000;
-	text-decoration: underline;
+	color: #333;
+	padding: 15px;
+	border: 1px solid blue;
 }
 
 
@@ -106,4 +111,59 @@ a:hover {
 @keyframes marquee {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
+}
+
+.project-text {
+	display: inline-block;
+	width: 29.3%;
+	padding: 2%;
+	color: #d6d6d6;
+	justify-content: space-between;
+
+}
+
+.project-text:hover {
+	color: #333;
+	font-weight: bolder;
+}
+
+
+@media only screen and (max-width: 900px) {
+	.grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 150px;
+	}
+
+	.item {
+	  grid-row: 1;
+	}
+
+	.item2 {
+	  grid-row: 2;
+  	  grid-column: 1;
+	}
+
+	.item3 {
+	  display: none;
+	}
+
+
+	
+}
+
+@media only screen and (max-height: 500px) {
+	.item3 {
+		display: none;
+	}
+
+	.item, .item2, .item3 {
+		position: static;
+	}
+
+	.item1-content, .item2-content {
+		position: static;
+		transform: none;
+		top: 0;
+		left: 0;
+	}
 }
