@@ -3,13 +3,14 @@
 }
 
 .grid {
+	background-color: var(--page-background);
 	display: grid;
   	height: 100vh;
 	text-align: center;
 	grid-template-columns: minmax(400px, 2fr) minmax(400px, 2fr);
 	grid-template-rows: 1fr 170px;
   	grid-column-gap: 20px;
-  	color: #474747;
+  	color: var(--main-text-color);
 }
 
 .item {
@@ -47,7 +48,7 @@
 	font-weight: bolder;
 	position: relative;
 	top: 15%;
-	color: #999;
+	color: var(--static-text-color);
 
 }
 	
@@ -57,16 +58,10 @@
 	transform: translate(-50%,-50%);
 }
 
-#project-view {
-	background-color: black;
-	height: 250px;
-	width: 400px;
-	min-width: 400px;
-}
-
 #name {
 	font-size: 2.25em;
 	font-weight: bolder;
+	font-style: italic;
 }
 
 
@@ -77,15 +72,18 @@ a {
 
 a, a:visited, a:active {
 	text-decoration: none;
-	color: #474747;
+	color: var(--main-text-color);
 	padding: 15px;
 	border: 1px solid transparent;
 }
 
 a:hover {
-	color: #333;
+	color: var(--hover-text-color: #333);
+	background-color: #333;
+	color: white;
+	border-radius: 4px;
 	padding: 15px;
-	border: 1px solid blue;
+	border: 1px solid white;
 }
 
 
@@ -117,13 +115,13 @@ a:hover {
 	display: inline-block;
 	width: 29.3%;
 	padding: 2%;
-	color: #d6d6d6;
+	color: var(--inactive-text-color);
 	justify-content: space-between;
 
 }
 
 .project-text:hover {
-	color: #333;
+	color: var(--hover-text-color);;
 	font-weight: bolder;
 }
 
