@@ -1,0 +1,38 @@
+#Header {
+  padding-left: 24px;
+  width: 100%;
+  height: 80px;
+  background: #333;
+  display: grid;
+  grid-template-columns: 300px 1fr minmax(auto, 1fr); }
+
+#name {
+  position: relative;
+  top: -7px;
+  margin-bottom: 0; }
+
+h4 {
+  margin-top: 0;
+  position: relative;
+  top: -7px;
+  font-weight: 400; }
+
+#links {
+  grid-column: 3;
+  display: flex;
+  justify-content: space-between; }
+
+#LinkItem {
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  line-height: 45.71429px;
+  color: #fff;
+  height: 76px;
+  margin: 0 10px;
+  position: relative;
+  left: -55px; }
+
+#LinkItem:hover {
+  font-weight: bold;
+  font-style: italic; }

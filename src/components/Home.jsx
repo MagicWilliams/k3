@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Home.css';
-import ProjectView from './ProjectView/ProjectView';
+import './Home.css';
+import Header from './Header/Header';
 
 class Home extends React.Component {
 	constructor(props) {
@@ -12,6 +12,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
+								<Header />
                 lmaoooo
             </div>
         );
