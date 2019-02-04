@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Inconsolata';
+  src: url("/fonts/inconsolata-bold-webfont.woff2") format("woff2"), url("/fonts/inconsolata-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
 body {
   background: #D6EAFC;
-  animation: bkgSwitch 30s ease infinite; }
+  animation: bkgSwitch 30s ease infinite;
+  font-family: Inconsolata; }
 
 @keyframes bkgSwitch {
   0% {
@@ -16,11 +23,10 @@ body {
 
 .Element, .Element-small {
   display: flex; }
-  .Element p, .Element-small p {
-    margin-right: 16px; }
   .Element .index, .Element-small .index {
-    width: 25px;
-    text-align: right; }
+    width: 50px;
+    text-align: right;
+    margin-right: 16px; }
 
 .Element-small {
   align-items: flex-end; }

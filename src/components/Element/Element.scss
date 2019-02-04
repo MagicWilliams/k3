@@ -3,13 +3,10 @@
 .Element, .Element-small {
   display: flex;
 
-  p {
-    margin-right: $sm;
-  }
-
   .index {
-    width: 25px;
+    width: 50px;
     text-align: right;
+    margin-right: $sm;
   }
 }
 
