@@ -2,5 +2,20 @@
 
 * {
 	font-family: "Avenir Next";
-	color: $pretty-pink;
+	color: $main-text-color;
+}
+
+hr {
+	border: .5px solid #222;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.Home-container {
+	width: 90%;
+	margin: $lg auto;
+}
+
+.tier {
+	margin: $md 0;
 }

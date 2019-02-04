@@ -2,6 +2,16 @@ $main-text-color: #555;
 $inactive-text-color: #d6d6d6;
 $hover-text-color: #555;
 $static-text-color: #555;
-$page-background: #fffffa;
+$page-background: #D6EAFC;
 $pretty-pink: #ffcccc;
 $white: #fff;
+$header-height: 80px;
+
+$sm: 16px;
+$md: 24px;
+$lg: 32px;
+
+
+body {
+  background: $page-background;
+}

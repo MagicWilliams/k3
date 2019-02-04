@@ -1,0 +1,12 @@
+body {
+  background: #D6EAFC; }
+
+.Element {
+  display: flex;
+  align-items: center; }
+  .Element p {
+    margin-right: 16px; }
+  .Element .content {
+    margin: 8px; }
+  .Element .index {
+    text-align: right; }

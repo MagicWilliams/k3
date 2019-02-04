@@ -1,0 +1,18 @@
+@import 'App.scss';
+
+.Element {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-right: $sm;
+  }
+
+  .content {
+    margin: $sm / 2;
+  }
+
+  .index {
+    text-align: right;
+  }
+}
