@@ -14,14 +14,18 @@ class Element extends React.Component {
           return(
             <div className="Element-small">
               <p className="index"> {this.props.index}. </p>
-              <h4 className="content"> {this.props.text} </h4>
+              <a href={this.props.url}>
+                <h4 className="content"> {this.props.text} </h4>
+              </a>
             </div>
           );
         } else {
           return(
             <div className="Element">
               <p className="index"> {this.props.index}. </p>
-              <h2 className="content"> {this.props.text} </h2>
+              <a href={this.props.url}>
+                <h2 className="content"> {this.props.text} </h2>
+              </a>
             </div>
           );
         }

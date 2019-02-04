@@ -24,7 +24,7 @@ body {
 .Element, .Element-small {
   display: flex; }
   .Element .index, .Element-small .index {
-    width: 50px;
+    width: 35px;
     text-align: right;
     margin-right: 16px; }
 
