@@ -1,5 +1,18 @@
 body {
-  background: #D6EAFC; }
+  background: #D6EAFC;
+  animation: bkgSwitch 30s ease infinite; }
+
+@keyframes bkgSwitch {
+  0% {
+    background: #D6EAFC; }
+  25% {
+    background: #D6FCF2; }
+  50% {
+    background: #FBFCD6; }
+  75% {
+    background: #FCEAD6; }
+  100% {
+    background: #D6EAFC; } }
 
 * {
   font-family: "Avenir Next";

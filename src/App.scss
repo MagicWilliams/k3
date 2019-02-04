@@ -11,6 +11,36 @@ $sm: 16px;
 $md: 24px;
 $lg: 32px;
 
+// Animation colors
+$ani-blue: #D6EAFC;
+$ani-green: #D6FCF2;
+$ani-yellow: #FBFCD6;
+$ani-orange: #FCEAD6;
+
 body {
-  background: $page-background;
+  background: $ani-blue;
+  animation: bkgSwitch 30s ease infinite;
+}
+
+@keyframes bkgSwitch {
+  0% {
+      background: $ani-blue;
+  }
+
+  25% {
+    background: $ani-green;
+  }
+
+  50% {
+      background: $ani-yellow;
+  }
+
+  75% {
+      background: $ani-orange;
+  }
+
+  100% {
+      background: $ani-blue;
+  }
+
 }
