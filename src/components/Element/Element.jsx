@@ -8,18 +8,25 @@ class Element extends React.Component {
     }
 
     render() {
-        return(
-          <div className="Element">
+
+      const small = !this.props.size;
+        if (small) {
+          return(
+            <div className="Element-small">
               <p className="index"> {this.props.index}. </p>
-              {this.props.size == 0 && (
-                <h4 className="content"> {this.props.text} </h4>
-              )}
-              {this.props.size == 1 && (
-                <h2 className="content"> {this.props.text} </h2>
-              )}
-          </div>
-        );
-    }
+              <h4 className="content"> {this.props.text} </h4>
+            </div>
+          );
+        } else {
+          return(
+            <div className="Element">
+              <p className="index"> {this.props.index}. </p>
+              <h2 className="content"> {this.props.text} </h2>
+            </div>
+          );
+        }
+      }
+
 }
 
 export default Element;

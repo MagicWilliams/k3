@@ -1,12 +1,26 @@
 body {
   background: #D6EAFC; }
 
+.Element, .Element-small {
+  display: flex; }
+  .Element p, .Element-small p {
+    margin-right: 16px; }
+  .Element .index, .Element-small .index {
+    width: 25px;
+    text-align: right; }
+
+.Element-small {
+  align-items: flex-end; }
+  .Element-small .index, .Element-small .content {
+    margin-top: 8px;
+    margin-bottom: 8px; }
+
 .Element {
   display: flex;
   align-items: center; }
   .Element p {
     margin-right: 16px; }
-  .Element .content {
-    margin: 8px; }
-  .Element .index {
-    text-align: right; }
+
+@media only screen and (max-width: 800px) {
+  .Element-small {
+    align-items: flex-start; } }

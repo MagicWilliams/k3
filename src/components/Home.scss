@@ -13,9 +13,15 @@ hr {
 
 .Home-container {
 	width: 90%;
-	margin: $lg auto;
+	margin: 5% auto;
 }
 
 .tier {
 	margin: $md 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .tier {
+		margin: $sm 0;
+  }
 }
